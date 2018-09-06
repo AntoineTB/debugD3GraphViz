@@ -1,0 +1,53 @@
+{
+  "name": "debugD3GraphViz",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@types/react": "^16.3.13",
+    "@types/react-dom": "^16.0.5",
+    "d3": "^5.0.0",
+    "d3-array": "^1.2.1",
+    "d3-axis": "^1.0.8",
+    "d3-brush": "^1.0.4",
+    "d3-geo": "^1.9.1",
+    "d3-graphviz": "^2.5.1",
+    "d3-scale": "^2.0.0",
+    "d3-selection": "^1.3.0",
+    "d3-shape": "^1.2.0",
+    "d3-svg-legend": "^2.25.6",
+    "d3-tip": "^0.7.1",
+    "d3-transition": "^1.1.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.0.17",
+    "viz.js": "^2.0.0"
+  },
+  "scripts": {
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "http-server",
+    "webpack": "webpack",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "dev": "webpack-dev-server --hot --colors --inline"
+  },
+  "devDependencies": {
+    "@types/es6-promise": "^3.3.0",
+    "awesome-typescript-loader": "^3.5.0",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.8.3",
+    "webpack-dev-server": "^2.11.2"
+  },
+  "description": "debugD3GraphViz",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoinetb/debugD3GraphViz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoinetb/debugD3GraphViz/issues"
+  },
+  "homepage": "https://github.com/antoinetb/debugD3GraphViz#readme"
+}

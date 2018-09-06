@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "tsx": "react",
+    "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "es2015",
+      "es5",
+      "es6",
+      "es7"
+     ],
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

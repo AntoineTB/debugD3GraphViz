@@ -20,7 +20,7 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts": "1.0.17",
-    "viz.js": "^2.0.0"
+    "viz.js": "1.8.2"
   },
   "scripts": {
     "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",

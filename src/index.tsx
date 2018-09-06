@@ -3,8 +3,7 @@ import * as ReactDOM              from "react-dom"
 import * as d3                    from 'd3'
 import * as d3Graphviz            from 'd3-graphviz'
 
-// Force d3-graphviz to be loaded in bundle, so it installs itself as a plugin of d3
-const _ = d3Graphviz.graphviz
+const _ = d3Graphviz.graphviz // force d3-graphviz to be loaded in bundle, so it installs itself as a
 
 class DotViewer extends React.Component<{},{}>{
   constructor(props){
@@ -18,7 +17,17 @@ class DotViewer extends React.Component<{},{}>{
   }
   componentDidMount(){this.renderGraph()}
   renderGraph(){
+    console.log(d3) // d3 object, no graphviz key
+    console.log(d3.graphviz) // undefined
+
+    /* TypeError : d3.graphviz is not a function */
+    //d3.graphviz(".dot_view_port").renderDot("digraph{a->b}")
+
+    /* Uncaught Cannot call a class as a function (worker.onmessage @ d3-graphviz.js:1178) */
     d3.select(".dot_view_port").graphviz().renderDot("digraph{a->b}")
+
+    /* Cannot call a class as a function (worker.onmessage @ d3-graphviz.js:1178) */
+    //d3Graphviz.graphviz(".dot_view_port").renderDot("digraph{a->b}")
   }
 }
 
